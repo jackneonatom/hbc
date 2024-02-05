@@ -14,4 +14,14 @@ def potential_divider(v,resistors):
 potential_divider(9,[500,3000])
 
 def temperature_check(temp,unit):
+    if (unit=="F")or(unit=="f"):
+        temp=(temp-32)*5/9
+    if temp>40:
+        print("hyper")
+    elif temp <36:
+        print("hypo")
+    else:
+        print("normal, a lie")
+
+
     
